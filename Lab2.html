@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>Food Survey Form</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .surveyForm {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        label {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .textbox {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            font-size: 20px;
+            margin: 10px;
+            width: 400px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Food Survey</h1>
+        <form name="foodsurveyForm" method="GET" action="Lab2_Success.html">
+        <div class="surveyForm">
+
+            <!-- Textbox -->
+            <div class="textbox">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Inquiry Date -->
+            <h2>Date:</h2>
+            <input type="datetime-local" id="inquiryDate" required>
+            <br>
+            <br>
+
+            <h2>Survey Questions:</h2>
+            <!-- Survey Question 1 -->
+            <label for="question1">How important are the following factors when choosing food?</label>
+            <br>
+            <input type="radio" id="price" name="question1" value="price" required>
+            <label for="price">Price</label>
+            <br>
+            <input type="radio" id="taste" name="question1" value="taste">
+            <label for="taste">Taste</label>
+            <br>
+            <input type="radio" id="nutritional value" name="question1" value="nutritional value">
+            <label for="nutritional value">Nutritional Value</label>
+            <br>
+            <input type="radio" id="organic" name="question1" value="organic">
+            <label for="organic">Organic</label>
+            <br>
+            <input type="radio" id="sustainable" name="question1" value="sustainable">
+            <label for="sustainable">Sustainable</label>
+            <br>
+            <input type="radio" id="convenience" name="question1" value="convenience">
+            <label for="convenience">Convenience</label>
+            <br>
+            <br>
+
+            <!-- Survey Question 2 -->
+            <label for="question2">Have you tried any popular food trends or diets recently?</label>
+            <br>
+            <input type="radio" id="plant-based" name="question2" value="plant-based" required>
+            <label for="plant-based">Plant-based</label>
+            <br>
+            <input type="radio" id="intermittent fasting" name="question2" value="intermittent fasting">
+            <label for="intermittent fasting">Intermittent Fasting</label>
+            <br>
+            <input type="radio" id="air fryer cooking" name="question2" value="air fryer cooking">
+            <label for="air fryer cooking">Air Fryer Cooking</label>
+            <br>
+            <br>
+
+            <!-- Survey Question 3 -->
+            <label for="question3">Do you use food delivery apps</label>
+            <br>
+            <input type="radio" id="Uber Eats" name="question3" value="Uber Eats" required>
+            <label for="Uber Eats">Uber Eats</label>
+            <br>
+            <input type="radio" id="DoorDash" name="question3" value="DoorDash">
+            <label for="DoorDash">DoorDash</label>
+            <br>
+            <input type="radio" id="GrubHub" name="question3" value="GrubHub">
+            <label for="GrubHub">GrubHub</label>
+            <br>
+            <br>
+
+            <!-- Survey Question 4 -->
+            <label for="question4">How likely are you to try food delivery services</label>
+            <br>
+            <input type="radio" id="prepared meals" name="question4" value="prepared meals" required>
+            <label for="prepared meals">Prepared Meals</label>
+            <br>
+            <input type="radio" id="meal kits" name="question4" value="meal kits">
+            <label for="meal kits">Meal Kits</label>
+            <br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
